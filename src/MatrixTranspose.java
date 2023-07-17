@@ -20,17 +20,13 @@ public class MatrixTranspose {
     public static void findRowSum(int array[][],int row_size,int column_size)
     {
         int temp;
-        for(int i=0;i<row_size;i++)
+        int transpose[][]=new int[column_size][row_size];
+        for(int i=0;i<column_size;i++)
         {
-            for (int j=0;j<column_size;j++)
+            for (int j=0;j<row_size;j++)
             {
-                if(i<j)
-                {
-                    temp=array[i][j];
-                    array[i][j]=array[j][i];
-                    array[j][i]=temp;
-                }
-                System.out.print(array[i][j]+" ");
+                transpose[i][j]=array[j][i];
+                System.out.print(transpose[i][j]+" ");
             }
             System.out.println();
         }
