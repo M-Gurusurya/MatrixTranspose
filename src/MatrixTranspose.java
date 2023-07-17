@@ -15,9 +15,9 @@ public class MatrixTranspose {
                 array[i][j]=scanner.nextInt();
             }
         }
-        findRowSum(array,row_size,column_size);
+        findMatrixTranspose(array,row_size,column_size);
     }
-    public static void findRowSum(int array[][],int row_size,int column_size)
+    public static void findMatrixTranspose(int array[][],int row_size,int column_size)
     {
         int temp;
         int transpose[][]=new int[column_size][row_size];
